@@ -1,17 +1,17 @@
-Quick & dirty container for the `sysdig-cli-scanner`
+# Quick & dirty container for the `sysdig-cli-scanner`
 
 A few notes:
 * It does a multistep build to get the certificates and the binary from an alpine container, then it uses the debian distroless to save some disk space (the binary itself is 28MB and the image is 31MB)
 * The sysdig-cli-scanner version number is used also for the container label
 
-# Build
+## Build it
 
 It requires you to be logged in your container image repository (`docker login`)
 and modify the REPO variable in the `doit.sh` script.
 
 Then is just a matter of running the `doit.sh` script.
 
-# Run it
+## Run it
 
 ```
 docker run -it --rm -e SECURE_API_TOKEN="XXXX" quay.io/e_minguez/sysdig-cli-scanner:1.2.6 sysdiglabs/dummy-vuln-app  --apiurl https://eu1.app.sysdig.com
