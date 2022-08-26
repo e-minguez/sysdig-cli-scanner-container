@@ -1,7 +1,7 @@
 Quick & dirty container for the `sysdig-cli-scanner`
 
 A few notes:
-* It does a multistep build to get the certificates and the binary from an alpine container, then it uses the debian distroless to save some disk space
+* It does a multistep build to get the certificates and the binary from an alpine container, then it uses the debian distroless to save some disk space (the binary itself is 28MB and the image is 31MB)
 * The sysdig-cli-scanner version number is used also for the container label
 
 # Build
