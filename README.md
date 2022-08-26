@@ -2,7 +2,7 @@ Quick & dirty container for the `sysdig-cli-scanner`
 
 A few notes:
 * It requires alpine instead of scratch because it doesn't include chmod (of course). 
-* The sysdig-cli-scanner version number is used also for the container tab
+* The sysdig-cli-scanner version number is used also for the container label
 
 # Build
 
